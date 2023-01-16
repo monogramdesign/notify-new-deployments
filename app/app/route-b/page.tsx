@@ -1,9 +1,9 @@
-import NotifyNewVersion from '../../../components/app/NotifyNewVersion'
+import NotifyNewVersion from '../../../components/NotifyNewVersion'
 
 export default function RouteB() {
 	return (
 		<>
-			<h1>This is /app/route-b</h1>
+			<span>{'<NotifyNewVersion />'} from page:</span>
 
 			<NotifyNewVersion />
 		</>

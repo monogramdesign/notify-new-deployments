@@ -1,3 +1,3 @@
 export default function NestedRouteA() {
-	return <h1>This is /app/nested/route-a</h1>
+	return <span>Reusing from /app/nested/layout.tsx:</span>
 }

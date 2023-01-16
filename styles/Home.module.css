@@ -1,11 +1,13 @@
-.container {
-	padding: 0 2rem;
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-.main {
-	min-height: 100vh;
-	padding: 4rem 0;
-	flex: 1;
+.container {
+	padding: 10rem 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -33,7 +35,8 @@
 
 .button:hover,
 .button:focus,
-.button:active {
+.button:active,
+.button-active {
 	background: #0070f3;
 	border-color: #0070f3;
 	cursor: pointer;

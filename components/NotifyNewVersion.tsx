@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+'use client'
 
 import { useLatestVersion } from '../lib/useLatestVersion'
 import { usePageLoadVersion } from '../lib/usePageLoadVersion'
@@ -6,8 +6,6 @@ import { usePageLoadVersion } from '../lib/usePageLoadVersion'
 import styles from '../styles/Home.module.css'
 
 export default function NotifyNewVersion() {
-	const router = useRouter()
-
 	const { latestVersion, isLoading: isLoadingLatest } = useLatestVersion()
 	const { pageLoadVersion, isLoading: isLoadingPageLoad } = usePageLoadVersion()
 
@@ -28,7 +26,7 @@ export default function NotifyNewVersion() {
 			</h1>
 
 			{hasNewVersion && (
-				<button className={styles.button} onClick={() => router.reload()}>
+				<button className={styles.button} onClick={() => window.location.reload()}>
 					Click here to update
 				</button>
 			)}

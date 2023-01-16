@@ -4,10 +4,10 @@ import styles from '../styles/Home.module.css'
 
 export default function WithHook() {
 	return (
-		<div className={styles.container}>
-			<main className={styles.main}>
-				<NotifyNewVersionWithHook />
-			</main>
-		</div>
+		<main className={styles.container}>
+			<span>{'<NotifyNewVersionWithHook />'} from page:</span>
+
+			<NotifyNewVersionWithHook />
+		</main>
 	)
 }
